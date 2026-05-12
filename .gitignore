@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+
+# Large raw climate source file; keep it local or use Git LFS if needed.
+data/raw/spei/*.nc

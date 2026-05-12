@@ -1,0 +1,301 @@
+region,year,spei12_mean,spei12_min,drought_months,severe_drought_months,drought_year,moderate_drought,severe_drought_year,spei_decile
+Tanger-Tetouan-Al Hoceima,2000,0.109,-0.416,1,0,0,0,0,8
+Tanger-Tetouan-Al Hoceima,2001,0.456,-0.479,1,1,0,0,0,9
+Tanger-Tetouan-Al Hoceima,2002,0.438,-0.023,2,1,0,0,0,9
+Tanger-Tetouan-Al Hoceima,2003,0.377,-0.271,2,0,0,0,0,9
+Tanger-Tetouan-Al Hoceima,2004,1.092,0.265,0,0,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2005,-0.34,-0.616,1,1,0,0,0,6
+Tanger-Tetouan-Al Hoceima,2006,0.932,0.423,1,1,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2007,-0.135,-0.749,0,0,0,0,0,7
+Tanger-Tetouan-Al Hoceima,2008,0.304,-0.59,0,0,0,0,0,8
+Tanger-Tetouan-Al Hoceima,2009,0.848,0.351,2,1,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2010,1.419,0.584,2,1,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2011,0.735,0.394,0,0,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2012,-0.613,-1.099,4,0,0,1,0,4
+Tanger-Tetouan-Al Hoceima,2013,0.041,-0.321,2,0,0,0,0,7
+Tanger-Tetouan-Al Hoceima,2014,-0.23,-0.994,0,0,0,0,0,6
+Tanger-Tetouan-Al Hoceima,2015,-0.286,-0.841,0,0,0,0,0,6
+Tanger-Tetouan-Al Hoceima,2016,0.85,0.397,0,0,0,0,0,10
+Tanger-Tetouan-Al Hoceima,2017,-0.144,-0.377,0,0,0,0,0,7
+Tanger-Tetouan-Al Hoceima,2018,-0.452,-1.162,2,1,0,0,0,5
+Tanger-Tetouan-Al Hoceima,2019,-0.295,-0.789,2,0,0,0,0,6
+Tanger-Tetouan-Al Hoceima,2020,0.058,-0.69,2,1,0,0,0,8
+Tanger-Tetouan-Al Hoceima,2021,-1.063,-1.398,4,1,1,1,0,3
+Tanger-Tetouan-Al Hoceima,2022,-1.496,-2.227,4,2,1,1,0,1
+Tanger-Tetouan-Al Hoceima,2023,-1.006,-1.699,3,2,1,1,0,3
+Tanger-Tetouan-Al Hoceima,2024,-0.338,-1.17,0,0,0,0,0,6
+Oriental,2000,-0.508,-1.047,0,0,0,1,0,5
+Oriental,2001,0.319,-0.177,2,0,0,0,0,9
+Oriental,2002,0.659,0.106,1,1,0,0,0,10
+Oriental,2003,0.385,-0.072,2,0,0,0,0,9
+Oriental,2004,0.303,-0.17,0,0,0,0,0,8
+Oriental,2005,-1.263,-1.974,3,1,1,1,0,2
+Oriental,2006,-0.136,-0.645,2,0,0,0,0,7
+Oriental,2007,-0.626,-1.311,3,0,0,1,0,4
+Oriental,2008,-0.154,-0.645,0,0,0,0,0,7
+Oriental,2009,0.84,0.343,0,0,0,0,0,10
+Oriental,2010,0.791,0.283,0,0,0,0,0,10
+Oriental,2011,0.313,-0.185,2,1,0,0,0,8
+Oriental,2012,-0.836,-1.283,4,0,0,1,0,3
+Oriental,2013,-0.046,-0.57,0,0,0,0,0,7
+Oriental,2014,-0.211,-0.942,0,0,0,0,0,6
+Oriental,2015,-0.844,-1.456,3,0,0,1,0,3
+Oriental,2016,0.532,0.239,0,0,0,0,0,9
+Oriental,2017,-1.19,-2.006,4,2,1,1,0,2
+Oriental,2018,-0.749,-1.434,3,0,0,1,0,4
+Oriental,2019,-0.706,-1.505,4,0,0,1,0,4
+Oriental,2020,0.099,-0.845,2,0,0,0,0,8
+Oriental,2021,-1.234,-1.569,6,0,1,1,0,2
+Oriental,2022,-1.992,-2.696,8,3,1,1,1,1
+Oriental,2023,-1.445,-2.104,7,2,1,1,0,2
+Oriental,2024,-0.632,-1.017,4,1,0,1,0,4
+Fes-Meknes,2000,-0.372,-0.864,2,1,0,0,0,5
+Fes-Meknes,2001,0.442,-0.208,2,0,0,0,0,9
+Fes-Meknes,2002,0.683,0.065,0,0,0,0,0,10
+Fes-Meknes,2003,0.5,-0.077,1,0,0,0,0,9
+Fes-Meknes,2004,0.782,0.424,2,1,0,0,0,10
+Fes-Meknes,2005,-0.783,-1.525,1,1,0,1,0,3
+Fes-Meknes,2006,0.598,-0.274,2,0,0,0,0,10
+Fes-Meknes,2007,-0.547,-0.9,1,0,0,1,0,5
+Fes-Meknes,2008,0.253,-0.294,2,0,0,0,0,8
+Fes-Meknes,2009,0.779,0.298,2,1,0,0,0,10
+Fes-Meknes,2010,0.799,0.05,2,1,0,0,0,10
+Fes-Meknes,2011,0.319,-0.092,0,0,0,0,0,9
+Fes-Meknes,2012,-0.527,-1.138,1,1,0,1,0,5
+Fes-Meknes,2013,-0.106,-0.503,0,0,0,0,0,7
+Fes-Meknes,2014,-0.539,-1.083,0,0,0,1,0,5
+Fes-Meknes,2015,-0.284,-0.905,2,0,0,0,0,6
+Fes-Meknes,2016,0.477,-0.107,0,0,0,0,0,9
+Fes-Meknes,2017,-0.348,-0.989,0,0,0,0,0,6
+Fes-Meknes,2018,-0.676,-1.213,3,0,0,1,0,4
+Fes-Meknes,2019,-0.358,-0.822,3,1,0,0,0,6
+Fes-Meknes,2020,0.166,-0.069,0,0,0,0,0,8
+Fes-Meknes,2021,-0.779,-1.269,3,0,0,1,0,4
+Fes-Meknes,2022,-1.629,-2.033,5,3,1,1,1,1
+Fes-Meknes,2023,-1.407,-1.751,4,1,1,1,0,2
+Fes-Meknes,2024,-0.338,-1.08,2,0,0,0,0,6
+Rabat-Sale-Kenitra,2000,-0.423,-0.804,2,0,0,0,0,5
+Rabat-Sale-Kenitra,2001,0.667,0.071,0,0,0,0,0,10
+Rabat-Sale-Kenitra,2002,0.638,0.111,1,1,0,0,0,10
+Rabat-Sale-Kenitra,2003,0.375,-0.101,2,1,0,0,0,9
+Rabat-Sale-Kenitra,2004,0.386,-0.38,0,0,0,0,0,9
+Rabat-Sale-Kenitra,2005,-0.731,-1.388,2,0,0,1,0,4
+Rabat-Sale-Kenitra,2006,0.568,0.356,0,0,0,0,0,10
+Rabat-Sale-Kenitra,2007,-0.369,-1.059,3,0,0,0,0,6
+Rabat-Sale-Kenitra,2008,0.566,0.043,2,0,0,0,0,10
+Rabat-Sale-Kenitra,2009,1.332,0.668,2,0,0,0,0,10
+Rabat-Sale-Kenitra,2010,1.066,0.604,1,0,0,0,0,10
+Rabat-Sale-Kenitra,2011,0.53,-0.319,0,0,0,0,0,9
+Rabat-Sale-Kenitra,2012,-0.534,-0.966,1,0,0,1,0,5
+Rabat-Sale-Kenitra,2013,0.608,-0.17,0,0,0,0,0,10
+Rabat-Sale-Kenitra,2014,0.317,-0.419,1,1,0,0,0,9
+Rabat-Sale-Kenitra,2015,-0.691,-1.011,1,0,0,1,0,4
+Rabat-Sale-Kenitra,2016,0.658,-0.031,2,0,0,0,0,10
+Rabat-Sale-Kenitra,2017,-0.186,-0.844,2,0,0,0,0,7
+Rabat-Sale-Kenitra,2018,-0.235,-0.695,0,0,0,0,0,6
+Rabat-Sale-Kenitra,2019,-0.23,-0.916,2,0,0,0,0,6
+Rabat-Sale-Kenitra,2020,0.484,-0.344,2,1,0,0,0,9
+Rabat-Sale-Kenitra,2021,-0.682,-1.328,4,0,0,1,0,4
+Rabat-Sale-Kenitra,2022,-1.828,-2.415,5,3,1,1,1,1
+Rabat-Sale-Kenitra,2023,-1.242,-1.997,3,0,1,1,0,2
+Rabat-Sale-Kenitra,2024,-0.702,-1.358,1,0,0,1,0,4
+Beni Mellal-Khenifra,2000,-0.5,-0.822,0,0,0,0,0,5
+Beni Mellal-Khenifra,2001,0.0,-0.751,0,0,0,0,0,7
+Beni Mellal-Khenifra,2002,0.37,-0.333,2,0,0,0,0,9
+Beni Mellal-Khenifra,2003,0.309,-0.502,0,0,0,0,0,8
+Beni Mellal-Khenifra,2004,0.251,-0.457,0,0,0,0,0,8
+Beni Mellal-Khenifra,2005,-0.736,-1.396,1,1,0,1,0,4
+Beni Mellal-Khenifra,2006,-0.163,-0.493,1,1,0,0,0,7
+Beni Mellal-Khenifra,2007,-0.168,-0.639,0,0,0,0,0,7
+Beni Mellal-Khenifra,2008,0.327,-0.227,0,0,0,0,0,9
+Beni Mellal-Khenifra,2009,0.547,-0.157,2,0,0,0,0,9
+Beni Mellal-Khenifra,2010,0.901,0.374,2,1,0,0,0,10
+Beni Mellal-Khenifra,2011,0.252,-0.295,0,0,0,0,0,8
+Beni Mellal-Khenifra,2012,-0.443,-1.379,0,0,0,0,0,5
+Beni Mellal-Khenifra,2013,0.277,-0.386,0,0,0,0,0,8
+Beni Mellal-Khenifra,2014,-0.564,-1.112,2,0,0,1,0,5
+Beni Mellal-Khenifra,2015,-0.575,-1.099,3,1,0,1,0,5
+Beni Mellal-Khenifra,2016,0.435,-0.359,0,0,0,0,0,9
+Beni Mellal-Khenifra,2017,-0.546,-1.005,1,0,0,1,0,5
+Beni Mellal-Khenifra,2018,-0.837,-1.544,1,0,0,1,0,3
+Beni Mellal-Khenifra,2019,-0.809,-1.106,4,0,0,1,0,3
+Beni Mellal-Khenifra,2020,-0.136,-0.931,1,1,0,0,0,7
+Beni Mellal-Khenifra,2021,-1.132,-1.948,4,1,1,1,0,2
+Beni Mellal-Khenifra,2022,-1.927,-2.476,8,2,1,1,1,1
+Beni Mellal-Khenifra,2023,-1.529,-1.93,4,3,1,1,1,1
+Beni Mellal-Khenifra,2024,-0.602,-1.168,3,0,0,1,0,5
+Casablanca-Settat,2000,-0.167,-0.565,0,0,0,0,0,7
+Casablanca-Settat,2001,0.123,-0.535,2,0,0,0,0,8
+Casablanca-Settat,2002,0.886,0.528,0,0,0,0,0,10
+Casablanca-Settat,2003,0.196,-0.254,1,1,0,0,0,8
+Casablanca-Settat,2004,0.906,0.482,1,0,0,0,0,10
+Casablanca-Settat,2005,-0.218,-0.623,2,0,0,0,0,6
+Casablanca-Settat,2006,0.395,0.089,0,0,0,0,0,9
+Casablanca-Settat,2007,-0.486,-0.795,3,1,0,0,0,5
+Casablanca-Settat,2008,0.315,-0.573,0,0,0,0,0,8
+Casablanca-Settat,2009,0.926,0.201,0,0,0,0,0,10
+Casablanca-Settat,2010,0.74,-0.14,2,0,0,0,0,10
+Casablanca-Settat,2011,0.624,0.125,0,0,0,0,0,10
+Casablanca-Settat,2012,-0.867,-1.661,3,1,0,1,0,3
+Casablanca-Settat,2013,0.401,-0.199,0,0,0,0,0,9
+Casablanca-Settat,2014,-0.561,-1.003,3,1,0,1,0,5
+Casablanca-Settat,2015,-0.533,-1.137,2,0,0,1,0,5
+Casablanca-Settat,2016,0.501,-0.057,0,0,0,0,0,9
+Casablanca-Settat,2017,-0.469,-0.731,1,0,0,0,0,5
+Casablanca-Settat,2018,-0.734,-1.377,2,0,0,1,0,4
+Casablanca-Settat,2019,-0.057,-0.884,2,1,0,0,0,7
+Casablanca-Settat,2020,0.283,-0.132,0,0,0,0,0,8
+Casablanca-Settat,2021,-0.975,-1.804,5,0,0,1,0,3
+Casablanca-Settat,2022,-1.207,-2.073,4,2,1,1,0,2
+Casablanca-Settat,2023,-1.624,-2.126,6,3,1,1,1,1
+Casablanca-Settat,2024,-0.368,-1.164,1,1,0,0,0,6
+Marrakech-Safi,2000,-0.615,-1.103,4,0,0,1,0,4
+Marrakech-Safi,2001,0.433,0.2,0,0,0,0,0,9
+Marrakech-Safi,2002,0.555,0.03,2,0,0,0,0,9
+Marrakech-Safi,2003,0.291,-0.272,2,0,0,0,0,8
+Marrakech-Safi,2004,0.466,-0.144,0,0,0,0,0,9
+Marrakech-Safi,2005,-1.415,-1.955,6,0,1,1,0,2
+Marrakech-Safi,2006,0.089,-0.534,0,0,0,0,0,8
+Marrakech-Safi,2007,-0.937,-1.608,4,1,0,1,0,3
+Marrakech-Safi,2008,-0.342,-0.98,3,0,0,0,0,6
+Marrakech-Safi,2009,0.446,-0.276,0,0,0,0,0,9
+Marrakech-Safi,2010,0.39,-0.251,0,0,0,0,0,9
+Marrakech-Safi,2011,0.018,-0.298,0,0,0,0,0,7
+Marrakech-Safi,2012,-0.46,-1.439,3,0,0,0,0,5
+Marrakech-Safi,2013,-0.268,-0.609,0,0,0,0,0,6
+Marrakech-Safi,2014,-0.118,-0.633,2,0,0,0,0,7
+Marrakech-Safi,2015,-1.013,-1.372,2,1,1,1,0,3
+Marrakech-Safi,2016,0.199,-0.357,1,1,0,0,0,8
+Marrakech-Safi,2017,-0.748,-1.308,4,1,0,1,0,4
+Marrakech-Safi,2018,-0.708,-1.303,2,0,0,1,0,4
+Marrakech-Safi,2019,-0.439,-1.074,2,1,0,0,0,5
+Marrakech-Safi,2020,-0.387,-0.638,3,0,0,0,0,5
+Marrakech-Safi,2021,-1.51,-2.164,6,1,1,1,1,1
+Marrakech-Safi,2022,-2.343,-2.93,7,2,1,1,1,1
+Marrakech-Safi,2023,-1.508,-2.176,4,2,1,1,1,1
+Marrakech-Safi,2024,-0.833,-1.228,2,1,0,1,0,3
+Draa-Tafilalet,2000,-0.877,-1.712,4,0,0,1,0,3
+Draa-Tafilalet,2001,-0.253,-0.554,0,0,0,0,0,6
+Draa-Tafilalet,2002,0.098,-0.157,0,0,0,0,0,8
+Draa-Tafilalet,2003,-0.436,-0.759,3,0,0,0,0,5
+Draa-Tafilalet,2004,-0.14,-0.534,1,1,0,0,0,7
+Draa-Tafilalet,2005,-1.125,-1.701,4,1,1,1,0,2
+Draa-Tafilalet,2006,-0.172,-0.803,0,0,0,0,0,7
+Draa-Tafilalet,2007,-0.785,-1.485,3,0,0,1,0,3
+Draa-Tafilalet,2008,-0.155,-0.568,0,0,0,0,0,7
+Draa-Tafilalet,2009,0.032,-0.193,0,0,0,0,0,7
+Draa-Tafilalet,2010,0.836,0.238,0,0,0,0,0,10
+Draa-Tafilalet,2011,-0.211,-0.809,2,0,0,0,0,6
+Draa-Tafilalet,2012,-1.233,-1.792,4,1,1,1,0,2
+Draa-Tafilalet,2013,0.179,-0.728,0,0,0,0,0,8
+Draa-Tafilalet,2014,-0.938,-1.535,4,0,0,1,0,3
+Draa-Tafilalet,2015,-0.664,-1.105,3,0,0,1,0,4
+Draa-Tafilalet,2016,-0.223,-1.044,0,0,0,0,0,6
+Draa-Tafilalet,2017,-0.981,-1.503,3,0,0,1,0,3
+Draa-Tafilalet,2018,-1.286,-1.762,4,1,1,1,0,2
+Draa-Tafilalet,2019,-0.987,-1.62,4,1,0,1,0,3
+Draa-Tafilalet,2020,-0.227,-0.821,0,0,0,0,0,6
+Draa-Tafilalet,2021,-1.224,-1.922,6,2,1,1,0,2
+Draa-Tafilalet,2022,-2.138,-2.741,6,3,1,1,1,1
+Draa-Tafilalet,2023,-2.512,-3.334,7,3,1,1,1,1
+Draa-Tafilalet,2024,-1.376,-1.636,4,1,1,1,0,2
+Souss-Massa,2000,-1.114,-1.922,4,2,1,1,0,3
+Souss-Massa,2001,0.312,-0.434,2,1,0,0,0,8
+Souss-Massa,2002,0.267,-0.473,0,0,0,0,0,8
+Souss-Massa,2003,0.052,-0.68,1,1,0,0,0,8
+Souss-Massa,2004,0.083,-0.39,0,0,0,0,0,8
+Souss-Massa,2005,-0.769,-1.312,2,0,0,1,0,4
+Souss-Massa,2006,-0.494,-1.166,0,0,0,0,0,5
+Souss-Massa,2007,-0.838,-1.456,3,0,0,1,0,3
+Souss-Massa,2008,0.001,-0.793,1,0,0,0,0,7
+Souss-Massa,2009,0.2,-0.126,1,0,0,0,0,8
+Souss-Massa,2010,0.638,-0.062,2,1,0,0,0,10
+Souss-Massa,2011,0.354,-0.186,2,0,0,0,0,9
+Souss-Massa,2012,-0.88,-1.906,2,0,0,1,0,3
+Souss-Massa,2013,-0.066,-0.747,2,0,0,0,0,7
+Souss-Massa,2014,-0.592,-1.222,2,0,0,1,0,5
+Souss-Massa,2015,-0.606,-1.398,2,1,0,1,0,4
+Souss-Massa,2016,0.11,-0.458,0,0,0,0,0,8
+Souss-Massa,2017,-1.048,-1.575,2,1,1,1,0,3
+Souss-Massa,2018,-0.631,-1.275,1,1,0,1,0,4
+Souss-Massa,2019,-0.755,-1.228,4,0,0,1,0,4
+Souss-Massa,2020,-0.033,-0.165,1,0,0,0,0,7
+Souss-Massa,2021,-1.714,-2.031,5,3,1,1,1,1
+Souss-Massa,2022,-2.421,-2.924,10,4,1,1,1,1
+Souss-Massa,2023,-1.884,-2.385,7,2,1,1,1,1
+Souss-Massa,2024,-1.098,-1.811,3,1,1,1,0,3
+Guelmim-Oued Noun,2000,-1.104,-1.747,5,0,1,1,0,3
+Guelmim-Oued Noun,2001,-0.219,-0.57,2,1,0,0,0,6
+Guelmim-Oued Noun,2002,0.0,-0.578,0,0,0,0,0,7
+Guelmim-Oued Noun,2003,-0.7,-0.906,4,1,0,1,0,4
+Guelmim-Oued Noun,2004,-0.209,-0.377,0,0,0,0,0,6
+Guelmim-Oued Noun,2005,-1.161,-1.64,5,1,1,1,0,2
+Guelmim-Oued Noun,2006,-0.041,-0.411,0,0,0,0,0,7
+Guelmim-Oued Noun,2007,-1.348,-2.401,4,1,1,1,0,2
+Guelmim-Oued Noun,2008,-0.538,-1.131,3,0,0,1,0,5
+Guelmim-Oued Noun,2009,0.124,-0.393,0,0,0,0,0,8
+Guelmim-Oued Noun,2010,0.344,-0.377,0,0,0,0,0,9
+Guelmim-Oued Noun,2011,-0.116,-0.85,0,0,0,0,0,7
+Guelmim-Oued Noun,2012,-1.36,-1.798,5,0,1,1,0,2
+Guelmim-Oued Noun,2013,-0.736,-1.468,1,1,0,1,0,4
+Guelmim-Oued Noun,2014,-0.878,-1.604,5,0,0,1,0,3
+Guelmim-Oued Noun,2015,-1.015,-1.641,5,0,1,1,0,3
+Guelmim-Oued Noun,2016,-0.261,-0.621,1,0,0,0,0,6
+Guelmim-Oued Noun,2017,-1.028,-1.353,5,1,1,1,0,3
+Guelmim-Oued Noun,2018,-1.733,-2.136,6,3,1,1,1,1
+Guelmim-Oued Noun,2019,-1.332,-1.991,3,0,1,1,0,2
+Guelmim-Oued Noun,2020,-0.216,-0.375,0,0,0,0,0,6
+Guelmim-Oued Noun,2021,-1.654,-2.187,5,1,1,1,1,1
+Guelmim-Oued Noun,2022,-2.368,-3.117,8,4,1,1,1,1
+Guelmim-Oued Noun,2023,-2.174,-2.966,8,2,1,1,1,1
+Guelmim-Oued Noun,2024,-1.142,-1.384,2,0,1,1,0,2
+Laayoune-Sakia El Hamra,2000,-1.157,-1.632,5,1,1,1,0,2
+Laayoune-Sakia El Hamra,2001,-0.296,-0.909,0,0,0,0,0,6
+Laayoune-Sakia El Hamra,2002,-0.499,-1.148,0,0,0,0,0,5
+Laayoune-Sakia El Hamra,2003,-0.314,-0.949,2,0,0,0,0,6
+Laayoune-Sakia El Hamra,2004,0.107,-0.726,0,0,0,0,0,8
+Laayoune-Sakia El Hamra,2005,-1.945,-2.265,6,2,1,1,1,1
+Laayoune-Sakia El Hamra,2006,-0.487,-1.073,3,1,0,0,0,5
+Laayoune-Sakia El Hamra,2007,-1.285,-1.582,6,2,1,1,0,2
+Laayoune-Sakia El Hamra,2008,-0.305,-0.696,2,1,0,0,0,6
+Laayoune-Sakia El Hamra,2009,-0.068,-0.718,2,0,0,0,0,7
+Laayoune-Sakia El Hamra,2010,0.179,-0.17,0,0,0,0,0,8
+Laayoune-Sakia El Hamra,2011,-0.066,-0.343,1,0,0,0,0,7
+Laayoune-Sakia El Hamra,2012,-0.767,-1.3,2,0,0,1,0,4
+Laayoune-Sakia El Hamra,2013,-0.577,-1.171,1,0,0,1,0,5
+Laayoune-Sakia El Hamra,2014,-0.686,-1.109,4,0,0,1,0,4
+Laayoune-Sakia El Hamra,2015,-1.605,-2.141,5,1,1,1,1,1
+Laayoune-Sakia El Hamra,2016,-0.123,-0.566,0,0,0,0,0,7
+Laayoune-Sakia El Hamra,2017,-1.094,-1.826,2,2,1,1,0,3
+Laayoune-Sakia El Hamra,2018,-1.448,-2.23,4,2,1,1,0,1
+Laayoune-Sakia El Hamra,2019,-0.946,-1.742,5,0,0,1,0,3
+Laayoune-Sakia El Hamra,2020,-0.571,-1.253,2,0,0,1,0,5
+Laayoune-Sakia El Hamra,2021,-1.808,-2.289,8,2,1,1,1,1
+Laayoune-Sakia El Hamra,2022,-2.775,-3.794,10,4,1,1,1,1
+Laayoune-Sakia El Hamra,2023,-2.161,-2.605,8,3,1,1,1,1
+Laayoune-Sakia El Hamra,2024,-1.051,-1.536,4,1,1,1,0,3
+Dakhla-Oued Ed Dahab,2000,-1.165,-1.596,5,1,1,1,0,2
+Dakhla-Oued Ed Dahab,2001,-0.133,-0.917,2,1,0,0,0,7
+Dakhla-Oued Ed Dahab,2002,-0.458,-1.502,2,0,0,0,0,5
+Dakhla-Oued Ed Dahab,2003,-1.226,-2.01,5,2,1,1,0,2
+Dakhla-Oued Ed Dahab,2004,-0.289,-0.492,0,0,0,0,0,6
+Dakhla-Oued Ed Dahab,2005,-1.443,-1.726,7,0,1,1,0,2
+Dakhla-Oued Ed Dahab,2006,-0.837,-1.492,3,1,0,1,0,3
+Dakhla-Oued Ed Dahab,2007,-1.262,-2.004,6,2,1,1,0,2
+Dakhla-Oued Ed Dahab,2008,-0.735,-1.185,4,1,0,1,0,4
+Dakhla-Oued Ed Dahab,2009,-0.347,-0.861,2,1,0,0,0,6
+Dakhla-Oued Ed Dahab,2010,0.442,-0.138,0,0,0,0,0,9
+Dakhla-Oued Ed Dahab,2011,-0.739,-1.235,2,0,0,1,0,4
+Dakhla-Oued Ed Dahab,2012,-1.885,-2.218,8,3,1,1,1,1
+Dakhla-Oued Ed Dahab,2013,-0.666,-1.067,4,1,0,1,0,4
+Dakhla-Oued Ed Dahab,2014,-1.191,-1.862,3,1,1,1,0,2
+Dakhla-Oued Ed Dahab,2015,-1.303,-2.145,3,1,1,1,0,2
+Dakhla-Oued Ed Dahab,2016,-0.61,-1.064,2,0,0,1,0,4
+Dakhla-Oued Ed Dahab,2017,-1.248,-1.686,4,0,1,1,0,2
+Dakhla-Oued Ed Dahab,2018,-1.417,-1.864,4,0,1,1,0,2
+Dakhla-Oued Ed Dahab,2019,-1.184,-1.666,4,0,1,1,0,2
+Dakhla-Oued Ed Dahab,2020,-0.715,-0.992,1,0,0,1,0,4
+Dakhla-Oued Ed Dahab,2021,-1.999,-2.752,8,3,1,1,1,1
+Dakhla-Oued Ed Dahab,2022,-2.67,-2.903,10,3,1,1,1,1
+Dakhla-Oued Ed Dahab,2023,-2.259,-2.773,8,4,1,1,1,1
+Dakhla-Oued Ed Dahab,2024,-1.692,-2.088,5,3,1,1,1,1

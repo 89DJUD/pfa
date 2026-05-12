@@ -1,0 +1,10 @@
+sector,co2_intensity_kgCO2_per_MAD,fourchette_IEA_guide,source,tax_mad_per_kgCO2_low,tax_mad_per_kgCO2_mid,tax_mad_per_kgCO2_high
+Ciment & Materiaux de construction,0.5038,0.45-0.65,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Energie & Mines,0.916,0.80-1.20,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Agro-alimentaire & Boissons,0.1099,0.08-0.15,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Chimie & Parachimie,0.2931,0.25-0.40,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Transport & Logistique,0.2565,0.20-0.35,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Industrie (autres),0.1832,-,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Distribution & Commerce,0.055,0.03-0.08,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Immobilier,0.0916,-,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
+Telecom & Technologies,0.0183,0.01-0.03,IEA Morocco 2000-2023 calibré,0.25,0.5,0.75
