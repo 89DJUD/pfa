@@ -1,0 +1,10 @@
+sector,mean,std,min,max
+Agro-alimentaire & Boissons,4.079,3.804,-0.069,14.476
+Chimie & Parachimie,9.393,5.173,0.731,19.451
+Distribution & Commerce,8.131,4.187,-0.526,17.609
+Energie & Mines,8.715,6.118,0.036,19.92
+Immobilier,8.625,5.758,1.622,15.214
+Industrie (autres),6.104,5.226,-1.04,14.4
+Materiaux de construction,6.056,4.318,0.0,15.253
+Telecom & Technologies,8.516,3.821,0.75,13.944
+Transport & Logistique,6.8,5.107,0.158,15.999
