@@ -1,78 +1,94 @@
 """
-PHASE 5 - ETAPE 5.2 : Matrice de corrélation
-=============================================
-Input  : data/processed/panel_final_merged.csv
-Output : outputs/figures/fig_correlation_matrix.png
-=============================================
+Phase 5 – Étape 5.2
+Matrice de corrélation + test de significativité
+Panel : 41 entreprises marocaines cotées | 2019-2024
 """
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 import seaborn as sns
+from scipy import stats
 import os
 
-BASE  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FIG   = os.path.join(BASE, 'outputs', 'figures')
-os.makedirs(FIG, exist_ok=True)
+df = pd.read_csv('data/panel_final_merged.csv')
+os.makedirs('outputs/figures', exist_ok=True)
 
-print("=" * 60)
-print("  PHASE 5 — ETAPE 5.2 : Matrice de corrélation")
-print("=" * 60)
+# ── Variables pour la matrice ─────────────────────────────────────────────────
+corr_vars = [
+    'zscore', 'spei12_mean', 'drought_months',
+    'carbon_burden_mid', 'leverage', 'log_assets', 'roa', 'liquidity'
+]
 
-df = pd.read_csv(os.path.join(BASE, 'data', 'processed', 'panel_final_merged.csv'))
-
-# ── Variables pour la matrice ─────────────────────────────────────
-corr_vars = ['zscore', 'spei12_mean', 'drought_months',
-             'carbon_burden_mid', 'leverage', 'log_assets', 'roa', 'liquidity']
-corr_vars = [v for v in corr_vars if v in df.columns]
-
-corr_matrix = df[corr_vars].corr()
-
-# ── Labels lisibles ───────────────────────────────────────────────
 labels = {
-    'zscore'           : 'Z-score',
-    'spei12_mean'      : 'SPEI-12 moy.',
-    'drought_months'   : 'Mois sécheresse',
-    'carbon_burden_mid': 'Charge carbone',
-    'leverage'         : 'Levier',
-    'log_assets'       : 'Log(Actif)',
-    'roa'              : 'ROA',
-    'liquidity'        : 'Liquidité',
+    'zscore'            : 'Z-score',
+    'spei12_mean'       : 'SPEI-12',
+    'drought_months'    : 'Mois séch.',
+    'carbon_burden_mid' : 'Charge CO₂',
+    'leverage'          : 'Levier',
+    'log_assets'        : 'Taille',
+    'roa'               : 'ROA',
+    'liquidity'         : 'Liquidité',
 }
-corr_matrix.index   = [labels.get(c, c) for c in corr_matrix.index]
-corr_matrix.columns = [labels.get(c, c) for c in corr_matrix.columns]
 
-# ── Heatmap ───────────────────────────────────────────────────────
+sub = df[corr_vars].rename(columns=labels).dropna()
+
+# ── Matrice de corrélation + p-values ─────────────────────────────────────────
+corr_matrix = sub.corr()
+n = len(sub)
+
+# Calcul des p-values (t-test bilatéral)
+pval_matrix = pd.DataFrame(np.ones_like(corr_matrix), 
+                            index=corr_matrix.index, 
+                            columns=corr_matrix.columns)
+for c1 in corr_matrix.columns:
+    for c2 in corr_matrix.columns:
+        if c1 != c2:
+            r = corr_matrix.loc[c1, c2]
+            t = r * np.sqrt(n - 2) / np.sqrt(1 - r**2)
+            pval_matrix.loc[c1, c2] = 2 * (1 - stats.t.cdf(abs(t), df=n-2))
+
+print("── Matrice de corrélation ──────────────────────────────────────────────")
+print(corr_matrix.round(3).to_string())
+print("\n── P-values ────────────────────────────────────────────────────────────")
+print(pval_matrix.round(3).to_string())
+
+# Corrélations avec le Z-score (classées)
+print("\n── Corrélations avec Z-score (classées) ────────────────────────────────")
+zscore_corr = corr_matrix['Z-score'].drop('Z-score').sort_values(key=abs, ascending=False)
+for var, r in zscore_corr.items():
+    p  = pval_matrix.loc[var, 'Z-score']
+    sig = '***' if p < 0.01 else '**' if p < 0.05 else '*' if p < 0.1 else ''
+    print(f"  {var:<15} r = {r:+.3f}  p = {p:.3f} {sig}")
+
+# ── Figure : Heatmap ──────────────────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(10, 8))
+
 mask = np.triu(np.ones_like(corr_matrix, dtype=bool))
 
-fig, ax = plt.subplots(figsize=(10, 8))
-fig.patch.set_facecolor('#FAFAFA')
+annot_labels = corr_matrix.copy().astype(str)
+for c1 in corr_matrix.columns:
+    for c2 in corr_matrix.columns:
+        r = corr_matrix.loc[c1, c2]
+        p = pval_matrix.loc[c1, c2]
+        sig = '***' if p < 0.01 else '**' if p < 0.05 else '*' if p < 0.1 else ''
+        annot_labels.loc[c1, c2] = f"{r:.2f}{sig}"
 
-sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f',
-            cmap='RdBu_r', center=0, vmin=-1, vmax=1,
-            square=True, linewidths=0.5, ax=ax,
-            cbar_kws={'shrink': 0.8},
-            annot_kws={'size': 10})
+sns.heatmap(
+    corr_matrix, mask=mask,
+    annot=annot_labels, fmt='', annot_kws={'size': 9},
+    cmap='RdBu_r', center=0, vmin=-1, vmax=1,
+    square=True, linewidths=0.5, ax=ax,
+    cbar_kws={'label': 'Coefficient de corrélation', 'shrink': 0.8}
+)
 
-ax.set_title('Matrice de corrélation — Panel entreprises marocaines\n'
-             f'({len(df)} observations, {df["year"].min()}–{df["year"].max()})',
-             fontsize=13, pad=15)
-ax.tick_params(axis='x', rotation=45, labelsize=10)
-ax.tick_params(axis='y', rotation=0, labelsize=10)
-ax.set_facecolor('#FAFAFA')
-
+ax.set_title(
+    'Matrice de corrélation — Panel entreprises marocaines (2019–2024)\n'
+    '* p<0.10   ** p<0.05   *** p<0.01',
+    fontsize=13, pad=15
+)
 plt.tight_layout()
-out_path = os.path.join(FIG, 'fig_correlation_matrix.png')
-plt.savefig(out_path, dpi=150, bbox_inches='tight')
-plt.close()
-
-# ── Afficher les corrélations significatives ──────────────────────
-print(f"\n  Corrélations avec le Z-score (|r| > 0.2) :")
-z_corr = df[corr_vars].corr()['zscore'].drop('zscore').abs().sort_values(ascending=False)
-for var, r in z_corr[z_corr > 0.2].items():
-    direction = "+" if df[corr_vars].corr()['zscore'][var] > 0 else "−"
-    print(f"  {labels.get(var, var):<25} r = {direction}{r:.3f}")
-
-print(f"\n  ✓  Figure sauvegardée : outputs/figures/fig_correlation_matrix.png")
-print(f"  ✓  ETAPE 5.2 terminée → lancez 16_temporal_trends.py")
+plt.savefig('outputs/figures/fig_correlation_matrix.png', dpi=150, bbox_inches='tight')
+plt.show()
+print("✅ Sauvegardé : outputs/figures/fig_correlation_matrix.png")

@@ -1,77 +1,92 @@
 """
-PHASE 5 - ETAPE 5.1 : Tableau de statistiques descriptives
-============================================================
-Input  : data/processed/panel_final_merged.csv
-Output : outputs/tables/table1_stats_desc.xlsx si openpyxl est installe,
-         sinon outputs/tables/table1_*.csv
-============================================================
+Phase 5 – Étape 5.1
+Tableau de statistiques descriptives
+Panel : 41 entreprises marocaines cotées | 2019-2024
 """
 
+import pandas as pd
+import numpy as np
 import os
 
-import pandas as pd
+# ── Chargement ────────────────────────────────────────────────────────────────
+df = pd.read_csv('data/panel_final_merged.csv')
+os.makedirs('outputs/tables',   exist_ok=True)
+os.makedirs('outputs/figures',  exist_ok=True)
 
+print(f"Panel chargé : {len(df)} obs | {df['firm_id'].nunique()} entreprises "
+      f"| {df['year'].min()}–{df['year'].max()}")
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_T = os.path.join(BASE, 'outputs', 'tables')
-os.makedirs(OUT_T, exist_ok=True)
+# ── Variables d'intérêt ───────────────────────────────────────────────────────
+vars_desc = {
+    'zscore'             : 'Z-score Altman',
+    'spei12_mean'        : 'SPEI-12 moyen régional',
+    'spei12_min'         : 'SPEI-12 minimum annuel',
+    'drought_months'     : 'Mois de sécheresse (SPEI<-1)',
+    'carbon_burden_mid'  : 'Charge carbone – scén. médian (50$/tCO₂)',
+    'carbon_burden_low'  : 'Charge carbone – scén. bas (25$/tCO₂)',
+    'carbon_burden_high' : 'Charge carbone – scén. haut (75$/tCO₂)',
+    'log_assets'         : 'Taille (log Total Actif)',
+    'leverage'           : 'Levier financier',
+    'liquidity'          : 'Ratio de liquidité',
+    'roa'                : 'ROA (Rentabilité des actifs)',
+}
 
-print("=" * 60)
-print("  PHASE 5 - ETAPE 5.1 : Statistiques descriptives")
-print("=" * 60)
+# ── Tableau principal ─────────────────────────────────────────────────────────
+rows = []
+for col, label in vars_desc.items():
+    s = df[col].dropna()
+    rows.append({
+        'Variable'    : label,
+        'N'           : int(s.count()),
+        'Moyenne'     : round(s.mean(), 3),
+        'Médiane'     : round(s.median(), 3),
+        'Écart-type'  : round(s.std(), 3),
+        'Min'         : round(s.min(), 3),
+        'P25'         : round(s.quantile(0.25), 3),
+        'P75'         : round(s.quantile(0.75), 3),
+        'Max'         : round(s.max(), 3),
+        'Asymétrie'   : round(s.skew(), 3),
+    })
 
-panel_path = os.path.join(BASE, 'data', 'processed', 'panel_final_merged.csv')
-df = pd.read_csv(panel_path)
+desc = pd.DataFrame(rows).set_index('Variable')
+print("\n── Statistiques descriptives ──────────────────────────────────────────")
+print(desc.to_string())
 
-print(f"\n  Panel charge : {len(df)} obs, {df['firm_id'].nunique()} entreprises")
-print(f"  Periode      : {df['year'].min()} - {df['year'].max()}")
+# ── Distribution Z-score par zone ─────────────────────────────────────────────
+print("\n── Distribution des zones Z-score ─────────────────────────────────────")
+zone_counts = df['in_distress'].value_counts()
+total = len(df)
+n_distress = int((df['zscore'] < 1.81).sum())
+n_grey     = int(((df['zscore'] >= 1.81) & (df['zscore'] < 2.99)).sum())
+n_safe     = int((df['zscore'] >= 2.99).sum())
+print(f"  Zone sûre     (Z ≥ 2.99) : {n_safe:>4} obs ({n_safe/total*100:.1f}%)")
+print(f"  Zone grise    (1.81–2.99): {n_grey:>4} obs ({n_grey/total*100:.1f}%)")
+print(f"  Zone détresse (Z < 1.81) : {n_distress:>4} obs ({n_distress/total*100:.1f}%)")
 
-# Variables d'interet
-vars_desc = [
-    'zscore', 'spei12_mean', 'spei12_min', 'drought_months',
-    'carbon_burden_mid', 'log_assets', 'leverage', 'liquidity', 'roa'
-]
-vars_desc = [v for v in vars_desc if v in df.columns]
+# ── Statistiques par secteur ───────────────────────────────────────────────────
+print("\n── Z-score moyen par secteur ───────────────────────────────────────────")
+sector_stats = df.groupby('sector').agg(
+    N          = ('zscore', 'count'),
+    Moy_Zscore = ('zscore', lambda x: round(x.mean(), 3)),
+    Med_Zscore = ('zscore', lambda x: round(x.median(), 3)),
+    Taux_detresse = ('in_distress', lambda x: f"{x.mean()*100:.1f}%"),
+    Moy_SPEI   = ('spei12_mean', lambda x: round(x.mean(), 3)),
+    Moy_Carbon = ('carbon_burden_mid', lambda x: round(x.mean(), 4)),
+).sort_values('Moy_Zscore')
+print(sector_stats.to_string())
 
-# Tableau descriptif complet
-desc = df[vars_desc].describe().T
-desc['median'] = df[vars_desc].median()
-desc['skew'] = df[vars_desc].skew()
-desc = desc[['count', 'mean', 'median', 'std', 'min', '25%', '75%', 'max', 'skew']]
-desc.columns = ['N', 'Moyenne', 'Mediane', 'Ecart-type', 'Min', 'P25', 'P75', 'Max', 'Asymetrie']
+# ── Sauvegarde Excel ──────────────────────────────────────────────────────────
+with pd.ExcelWriter('outputs/tables/table1_stats_desc.xlsx', engine='openpyxl') as w:
+    desc.to_excel(w, sheet_name='Stats_generales')
+    sector_stats.to_excel(w, sheet_name='Stats_par_secteur')
 
-print("\n  Statistiques descriptives :")
-print("  " + "-" * 80)
-print(desc.round(3).to_string())
+    # Stats par année
+    year_stats = df.groupby('year').agg(
+        N             = ('zscore', 'count'),
+        Moy_Zscore    = ('zscore', lambda x: round(x.mean(), 3)),
+        Taux_detresse = ('in_distress', lambda x: f"{x.mean()*100:.1f}%"),
+        Moy_SPEI      = ('spei12_mean', lambda x: round(x.mean(), 3)),
+    )
+    year_stats.to_excel(w, sheet_name='Stats_par_annee')
 
-# Stats par secteur (Z-score)
-sec_stats = None
-if 'sector' in df.columns:
-    print("\n  Z-score moyen par secteur :")
-    print("  " + "-" * 45)
-    sec_stats = df.groupby('sector')['zscore'].agg(['mean', 'std', 'min', 'max']).round(3)
-    print(sec_stats.to_string())
-
-# Sauvegarde Excel ou CSV
-stats_year = df.groupby('year')['zscore'].agg(['mean', 'std', 'count']).round(3)
-out_path = os.path.join(OUT_T, 'table1_stats_desc.xlsx')
-
-try:
-    with pd.ExcelWriter(out_path, engine='openpyxl') as writer:
-        desc.round(3).to_excel(writer, sheet_name='Stats_globales')
-        if sec_stats is not None:
-            sec_stats.to_excel(writer, sheet_name='Stats_par_secteur')
-        stats_year.to_excel(writer, sheet_name='Stats_par_annee')
-    print("\n  OK Sauvegarde : outputs/tables/table1_stats_desc.xlsx")
-except ModuleNotFoundError:
-    desc.round(3).to_csv(os.path.join(OUT_T, 'table1_stats_globales.csv'))
-    if sec_stats is not None:
-        sec_stats.to_csv(os.path.join(OUT_T, 'table1_stats_par_secteur.csv'))
-    stats_year.to_csv(os.path.join(OUT_T, 'table1_stats_par_annee.csv'))
-    print("\n  ATTENTION : openpyxl n'est pas installe, fichier Excel ignore.")
-    print("  OK Sauvegarde CSV : outputs/tables/table1_stats_globales.csv")
-    if sec_stats is not None:
-        print("  OK Sauvegarde CSV : outputs/tables/table1_stats_par_secteur.csv")
-    print("  OK Sauvegarde CSV : outputs/tables/table1_stats_par_annee.csv")
-
-print("  OK ETAPE 5.1 terminee -> lancez 15_correlation.py")
+print("\n✅ Sauvegardé : outputs/tables/table1_stats_desc.xlsx")

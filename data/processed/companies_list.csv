@@ -1,0 +1,56 @@
+firm_id,firm_name,ticker,sector,region,year_listed
+MAR001,Cosumar,CSR,Agro-alimentaire & Boissons,Casablanca-Settat,2000
+MAR002,Lesieur Cristal,LES,Agro-alimentaire & Boissons,Casablanca-Settat,2000
+MAR003,Centrale Danone,CDM,Agro-alimentaire & Boissons,Casablanca-Settat,2000
+MAR004,Brasseries du Maroc,BRM,Agro-alimentaire & Boissons,Casablanca-Settat,2000
+MAR005,Dari Couspate,DAR,Agro-alimentaire & Boissons,Casablanca-Settat,2004
+MAR006,Cartier Saada,CTS,Agro-alimentaire & Boissons,Souss-Massa,2006
+MAR007,Zalagh Holding,ZAL,Agro-alimentaire & Boissons,Fes-Meknes,2010
+MAR008,Agma Lahlou-Tazi,ALT,Agro-alimentaire & Boissons,Casablanca-Settat,2003
+MAR009,LafargeHolcim Maroc,LHM,Materiaux de construction,Casablanca-Settat,2000
+MAR010,Ciments du Maroc,CMA,Materiaux de construction,Souss-Massa,2000
+MAR011,SONASID,SID,Materiaux de construction,Rabat-Sale-Kenitra,2000
+MAR012,Holcim Maroc,HOL,Materiaux de construction,Casablanca-Settat,2000
+MAR013,Aluminium du Maroc,ALM,Materiaux de construction,Casablanca-Settat,2000
+MAR014,Nexans Maroc,NEX,Materiaux de construction,Casablanca-Settat,2000
+MAR015,Managem,MNG,Energie & Mines,Casablanca-Settat,2000
+MAR016,SMI,SMI,Energie & Mines,Marrakech-Safi,2000
+MAR017,TotalEnergies Marketing MA,TMA,Energie & Mines,Casablanca-Settat,2000
+MAR018,Samir,SAM,Energie & Mines,Casablanca-Settat,2000
+MAR019,Stroc Industrie,STR,Energie & Mines,Casablanca-Settat,2008
+MAR020,Label'Vie,LBV,Distribution & Commerce,Rabat-Sale-Kenitra,2008
+MAR021,Auto Hall,AUTO,Distribution & Commerce,Casablanca-Settat,2000
+MAR022,CFAO Maroc,CFA,Distribution & Commerce,Casablanca-Settat,2000
+MAR023,OULMES,OUL,Distribution & Commerce,Casablanca-Settat,2000
+MAR024,Stokvis Nord Afrique,SNO,Distribution & Commerce,Casablanca-Settat,2000
+MAR025,Maghreb Oxygène,MOX,Distribution & Commerce,Casablanca-Settat,2000
+MAR026,Alliances,ADH,Immobilier,Casablanca-Settat,2007
+MAR027,Résidences Dar Saada,RDS,Immobilier,Casablanca-Settat,2014
+MAR028,Douja Prom Addoha,ADO,Immobilier,Casablanca-Settat,2006
+MAR029,Colorado,COL,Immobilier,Casablanca-Settat,2006
+MAR030,Immorente Invest,IMO,Immobilier,Casablanca-Settat,2019
+MAR031,Maroc Telecom,IAM,Telecom & Technologies,Rabat-Sale-Kenitra,2004
+MAR032,HPS,HPS,Telecom & Technologies,Casablanca-Settat,2000
+MAR033,Disway,DIS,Telecom & Technologies,Casablanca-Settat,2008
+MAR034,M2M Group,M2M,Telecom & Technologies,Casablanca-Settat,2016
+MAR035,CTM,CTM,Transport & Logistique,Casablanca-Settat,2000
+MAR036,Marsa Maroc,MSA,Transport & Logistique,Casablanca-Settat,2016
+MAR037,TIMAR,TIM,Transport & Logistique,Casablanca-Settat,2006
+MAR038,Afriquia Gaz,AGZ,Transport & Logistique,Casablanca-Settat,2000
+MAR039,Snep,SNP,Chimie & Parachimie,Casablanca-Settat,2000
+MAR040,Sothema,SOT,Chimie & Parachimie,Casablanca-Settat,2005
+MAR041,Promopharm,PRP,Chimie & Parachimie,Casablanca-Settat,2006
+MAR042,Pharma 5,PH5,Chimie & Parachimie,Casablanca-Settat,2016
+MAR043,Colorobbia Maroc,CLR,Chimie & Parachimie,Casablanca-Settat,2008
+MAR044,Delattre Levivier Maroc,DLM,Industrie (autres),Casablanca-Settat,2000
+MAR045,Ennakl Automobiles,ENA,Industrie (autres),Casablanca-Settat,2012
+MAR046,Jet Contractors,JET,Industrie (autres),Rabat-Sale-Kenitra,2014
+MAR047,Involys,INV,Industrie (autres),Casablanca-Settat,2006
+MAR048,IB Maroc.com,IBM,Industrie (autres),Casablanca-Settat,2009
+MAR049,Fenie Brossette,FBR,Industrie (autres),Casablanca-Settat,2000
+MAR050,AFMA,AFM,Industrie (autres),Casablanca-Settat,2000
+MAR051,Med Paper,MDP,Industrie (autres),Casablanca-Settat,2000
+MAR052,Rebab Company,REB,Industrie (autres),Casablanca-Settat,2016
+MAR053,Risma,RIS,Industrie (autres),Casablanca-Settat,2006
+MAR054,Microdata,MIC,Industrie (autres),Casablanca-Settat,2008
+MAR055,Eqdom,EQD,Industrie (autres),Casablanca-Settat,2000
